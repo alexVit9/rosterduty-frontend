@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/landing.html" },
+    { "source": "/((?!landing\\.html|assets|favicon\\.ico).*)", "destination": "/index.html" }
+  ]
+}
