@@ -1,5 +1,6 @@
 // API Client for RosterDuty backend
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://rosterduty-backend-production.up.railway.app';
+const _rawApiUrl = import.meta.env.VITE_API_URL || 'https://rosterduty-backend-production.up.railway.app';
+const API_BASE_URL = _rawApiUrl.startsWith('http') ? _rawApiUrl : `https://${_rawApiUrl}`;
 
 export interface LocationData {
   id: string;
